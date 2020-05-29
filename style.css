@@ -30,10 +30,11 @@ hr {
 
 }
 #logo {
-  width: 250px;
+  width: 100%;
   height: 90px;
+  margin: 0 auto;
   background: #4aaaa4;
-  float: left;
+  float: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   line-height: 90px;
