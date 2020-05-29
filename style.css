@@ -50,7 +50,9 @@ hr {
 .custom-navbar {
   background-image: linear-gradient(#fff, #4aaaa4);
 }  
-
+#slider {
+  width: 100%;
+}
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
@@ -159,7 +161,7 @@ button[disabled] {
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 85px;
+  padding-bottom: auto;
   font-size: 1.2rem;
   text-align: center;
   margin-top: 10px;
