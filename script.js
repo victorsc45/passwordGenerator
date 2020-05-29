@@ -1,51 +1,44 @@
-// Assignment Code
-const generateBtn = document.querySelector("#generate");
-disable[generateBtn];
+// get user input from DOM
+const resultEL = document.getElementById('result');
+
+// object with all functions inside
+
+let Package  = {
+  lower: getLowers,
+  upper: getUppers,
+  num: getNumbers,
+  spChar: getSymbols
+};
+
+// upper case letters included in password randow function user choices
+function getLowers(){
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+}
+function getUppers(){
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+}
+function getNumbers(){
+  return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+} 
+function getSymbols() {
+  const specialChar = "!@#$%^&*(){}[]=<>/";
+  return specialChar[Math.floor(Math.random() * specialChar.length)];
+}
+// slider function for length of password
+
+var slider = new Slider("#ex6");
+slider.on("slide", function(sliderValue) {
+	document.getElementById("ex6SliderVal").textContent = sliderValue;
+});
+// Assignment Code original
+const generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
 function writePassword() {
   let password = generatePassword();
-  let passwordText = document.querySelector("#password");
-  
-  
-  if(document.querySelector("#uppers")){
-   let passType = upperValues;
-   enable[generateBtn];
- }
- else if(document.querySelector("#lowers")){
-   let passType = lowerValues;
-   enable[generateBtn];
- }
- else if(document.querySelector("#nums")){
-   let passType = numValues;
-   enable[generateBtn];
- }
- else  {
-   let passType = strongValues;
-   enable[generateBtn];
- }
+  let passwordText = document.querySelector('#password');
+  passwordText.value = password;
 }
-  //possible password values
-  let strongValues = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxzy1234567890!@#$%^&*()-_=";
-  let numValues = "1234567890";
-  let lowerValues = "abcdefghijklmnopqrstuvwyxz";
-  let upperValues = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  passwordText.values = password;
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
-// Assignment Code original
-//var generateBtn = document.querySelector("#generate");
-
-// Write password to the #password input
-//function writePassword(uppers, lowers, nums, strong) {
-  //var password = generatePassword();
- // var passwordText = document.querySelector("#password");
-
- // passwordText.value = password;
-
-//}
-
-// Add event listener to generate button
-//generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener('click', writePassword);
