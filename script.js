@@ -30,6 +30,17 @@ function sliderChange(val) {
   document.getElementById('output').innerHTML = val;
 }
 document.getElementById('slider').value = 8;
+
+// radio buttons unchecked default
+// const radioBtns = document.querySelector("reset");
+document.getElementById("reset").onclick()
+{
+  document.getElementsByName("optradio1").checked = false;
+  document.getElementsByName("optradio2").checked = false;
+  document.getElementsByName("optradio3").checked = false;
+  document.getElementsByName("optradio4").checked = false;
+}
+// radioBtns.addEventListener("onclick", resetRadio());
 // Assignment Code original
 const generateBtn = document.querySelector('#generate');
 
