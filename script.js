@@ -3,7 +3,7 @@ const resultEL = document.getElementById('result');
 
 // object with all functions inside
 
-let Package  = {
+let passPackage  = {
   lower: getLowers,
   upper: getUppers,
   num: getNumbers,
@@ -26,10 +26,10 @@ function getSymbols() {
 }
 // slider function for length of password
 
-var slider = new Slider("#ex6");
-slider.on("slide", function(sliderValue) {
-	document.getElementById("ex6SliderVal").textContent = sliderValue;
-});
+function sliderChange(val) {
+  document.getElementById('output').innerHTML = val;
+}
+document.getElementById('slider').value = 8;
 // Assignment Code original
 const generateBtn = document.querySelector('#generate');
 

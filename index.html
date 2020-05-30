@@ -35,8 +35,10 @@
           <div class="card-body">
             <textarea readonly id="password" placeholder="password generated here"
               aria-label="Generated Password"></textarea>
-              <input id="ex6" type="text" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="3"/>
-    <span id="ex6CurrentSliderValLabel">Current Slider Value: <span id="ex6SliderVal">3</span></span>
+              <input id="slider" type="range" min="8" max="128" step="1" oninput="sliderChange(this.value)">
+<output id="output"></output>
+                
+              
           </div>
           
           <hr>
