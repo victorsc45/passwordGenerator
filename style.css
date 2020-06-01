@@ -16,6 +16,11 @@ body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
+button[disabled] {
+  cursor: default;
+  background: #c0c7cf;
+}
+
 /* navigation bar properties */
 
 h2 {
@@ -149,10 +154,7 @@ header {
   text-align: center;
   cursor: pointer;
 }
-/* button:enabled {
-  cursor: default;
-  background: #c0c7cf;
-} */
+
 
 .float-right {
   float: right;

@@ -1,5 +1,5 @@
 // get user input from DOM
-// const generateBtn = document.querySelector('#generate');
+let generateBtn = document.getElementById('generate');
 let passwordEL = document.querySelector('#password');
 let lowerEL = document.querySelector('#inlineCheckbox1');
 let upperEL = document.querySelector('#inlineCheckbox2');
@@ -12,7 +12,7 @@ let sliderEL = document.querySelector('#slider');
 function sliderChange(val) {
   document.getElementById('output').innerHTML = val;
 }
-document.getElementById('slider').value = 8;
+document.getElementById('slider').value = ' ';
 // object with all functions inside
 
 let passPackage  = {
@@ -21,21 +21,25 @@ let passPackage  = {
   num: getNumbers,
   spChar: getSymbols
 };
-function generatePassword () {
+
+generateBtn.addEventListener('click', writePassword);
+generateBtn.addEventListener('click', console.log("anything please"));
+function writePassword() {
   let lenChoice = parseInt(sliderEL.value);
   let includeUp = upperEL.checked;
   let includelow = lowerEL.checked;
   let includeNum = numberEL.checked;
   let includeSpec = specialEL.checked;
- console.log(includeUp, includelow, includeNum, includeSpec);
+ console.log(includeUp, includelow, includeNum, includeSpec, lenChoice);
 }
 
+
 // Write password to the #password input
-function writePassword() {
-  let password = generatePassword();
-  let passwordText = document.querySelector('#password');
-  passwordText.value = password;
-}
+// function writePassword() {
+//   let password = generatePassword();
+//   let passwordText = document.querySelector('#password');
+//   passwordText.value = password;
+// }
 
 
 // upper case letters included in password randow function user choices
@@ -55,6 +59,6 @@ function getSymbols() {
 
 // Add event listener to generate button
 // generateBtn.addEventListener('click', writePassword()); 
-document.querySelector('#generate').addEventListener('click', generatePassword());
+
 
 
