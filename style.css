@@ -94,6 +94,10 @@ header {
 .card-body {
   min-height: 100px;
 }
+.room {
+  margin: 0 20px;
+}
+
 #length {
   float: left;
   margin: 0 10px 0 0;

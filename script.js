@@ -38,21 +38,21 @@ function generatePassword(lower, upper, num, spChar, lenChoice) {
   // password var start
   let passwordText = ' ';
   //Checked values for lower upper number and special character
-  const typesCount = lower + upper + num + spChar;
-  console.log('numOfChecked:  ', typesCount);
-  console.log(lenChoice);
+  const checkedCount = lower + upper + num + spChar;
+  // console.log('numOfChecked:  ', checkedCount);
+  // console.log(lenChoice);
   // create an array of objects for the checkboxes boolen values and filter (array method) objects for false checkboxes
-  const typesArr = [{lower}, {upper}, {num}, {spChar}].filter(item => Object.values(item)[0]);
-  console.log('Array of choices: ', typesArr);
+  const charsArr = [{lower}, {upper}, {num}, {spChar}].filter(choices => Object.values(choices)[0]);
+  // console.log('Array of choices: ', charsArr);
   //no password generated if boxes unchecked
-  if (typesCount <= 0) {
+  if (checkedCount <= 0) {
     return  ' ';
   }
 
-  for( let i =0; i < lenChoice; i += typesCount) {
-    typesArr.forEach(type => {
-      const funcName = Object.keys(type)[0];
-      console.log('funcname: ', funcName);
+  for( let i =0; i < lenChoice; i += checkedCount) {
+   charsArr.forEach(checkBx => {
+      const funcName = Object.keys(checkBx)[0];
+      // console.log('funcname: ', funcName);
       passwordText += passPackage[funcName]();
     });
   }
