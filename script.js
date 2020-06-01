@@ -21,24 +21,53 @@ let passPackage  = {
   num: getNumbers,
   spChar: getSymbols
 };
-
+// Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
-generateBtn.addEventListener('click', console.log("anything please"));
+
 function writePassword() {
-  let lenChoice = parseInt(sliderEL.value);
-  let includeUp = upperEL.checked;
-  let includelow = lowerEL.checked;
-  let includeNum = numberEL.checked;
-  let includeSpec = specialEL.checked;
- console.log(includeUp, includelow, includeNum, includeSpec, lenChoice);
+  const includelow = lowerEL.checked;
+  const includeUp = upperEL.checked;
+  const includeNum = numberEL.checked;
+  const includeSpec = specialEL.checked;
+  const lenChoice = parseInt(sliderEL.value);
+  passwordEL.innerText = generatePassword(includelow, includeUp,  includeNum, includeSpec, lenChoice);
 }
+//generate password
+function generatePassword(lower, upper, num, spChar, lenChoice) {
+  event.preventDefault();
+  // password var start
+  let passwordText = ' ';
+  //Checked values for lower upper number and special character
+  const typesCount = lower + upper + num + spChar;
+  console.log('numOfChecked:  ', typesCount);
+  console.log(lenChoice);
+  // create an array of objects for the checkboxes boolen values and filter (array method) objects for false checkboxes
+  const typesArr = [{lower}, {upper}, {num}, {spChar}].filter(item => Object.values(item)[0]);
+  console.log('Array of choices: ', typesArr);
+  //no password generated if boxes unchecked
+  if (typesCount <= 0) {
+    return  ' ';
+  }
+
+  for( let i =0; i < lenChoice; i += typesCount) {
+    typesArr.forEach(type => {
+      const funcName = Object.keys(type)[0];
+      console.log('funcname: ', funcName);
+      passwordText += passPackage[funcName]();
+    });
+  }
+  
+    const generatedPass = passwordText;
+    return generatedPass;
+ 
+  }
+
 
 
 // Write password to the #password input
 // function writePassword() {
 //   let password = generatePassword();
-//   let passwordText = document.querySelector('#password');
-//   passwordText.value = password;
+  
 // }
 
 
@@ -57,8 +86,8 @@ function getSymbols() {
   return specialChar[Math.floor(Math.random() * specialChar.length)];
 }
 
-// Add event listener to generate button
-// generateBtn.addEventListener('click', writePassword()); 
+
+
 
 
 
