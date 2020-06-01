@@ -139,22 +139,6 @@ header {
   text-align: center;
   cursor: pointer;
 }
-#copy {
-  border: none;
-  background-color: hsl(360, 91%, 36%);
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
-  display: inline-block;
-  font-size: 16px;
-  line-height: 20px;
-  margin: 16px 16px 16px 20px;
-  padding: 7px 17px;
-  text-align: center;
-  cursor: pointer;
-}
-
 
 .float-right {
   float: right;
@@ -164,7 +148,7 @@ header {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  height: auto;
+  height: 146px;
   border: solid black;
   border: 3px;
   display: block;
@@ -179,7 +163,7 @@ header {
   margin-bottom: 10px;
   border: 2px dashed #c0c7cf;
   border-radius: 6px;
-  resize: none;
+  resize: auto;
   overflow: hidden;
 }
 
