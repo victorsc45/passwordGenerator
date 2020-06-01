@@ -89,7 +89,18 @@ header {
 .card-body {
   min-height: 100px;
 }
-
+#length {
+  float: left;
+  margin: 0 10px 0 0;
+}
+#slider {
+  margin-top: 10px;
+  float: left;
+  width: 60%;
+}
+#output {
+  margin: 0 20px;
+}
 .card-footer {
   text-align: center;
 }
@@ -138,7 +149,7 @@ header {
   text-align: center;
   cursor: pointer;
 }
-/* button[disabled] {
+/* button:enabled {
   cursor: default;
   background: #c0c7cf;
 } */
