@@ -6,26 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Password Generator</title>
+
   <!-- custom stylesheet -->
+
   <link rel="stylesheet" type="text/css" href="./style.css" />
+
   <!-- bootstrap stylesheet  -->
   <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
   <!-- sticky footer bootstrap for css stylesheet -->
+
   <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/sticky-footer.css">
+
 </head>
 
 <body>
+
   <!-- nav bar setup for links logo and responsiveness -->
+
   <nav class="navbar navbar-expand-lg navbar-dark custom-navbar py-0">
     <div class="container-fluid py-0">
+
       <!-- Brand and toggle get grouped for better mobile display -->
+
       <a id="logo" class="navbar-brand" href="#">Victor's Password Generator</a>
+
     </div><!-- /.container-fluid -->
   </nav>
+
+  <!-- container for card object in bootstrap -->
+
   <div class="container-fluid wrapper">
     <div class="row">
+
+      <!-- bootstrap column responsiveness and auto center card object -->
+
       <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 mx-auto">
         <header>
           <h1>Password Generator</h1>
@@ -38,6 +56,9 @@
             <textarea readonly id="password" placeholder="password generated here"
               aria-label="Generated Password"></textarea>
             <hr>
+
+            <!-- user checkbox group at least one must be checked for the click event to fire -->
+
             <div class="form-check form-check-inline room">
               <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
               <label class="form-check-label" for="inlineCheckbox1">include lower case</label>
@@ -55,13 +76,19 @@
               <label class="form-check-label" for="inlineCheckbox4">include special characters</label>
             </div>
             <hr>
-            <label id="length" for="length">Password Length:</label>
+
+            <!-- Slider for user choice of length of password used in js for loop through random criteria -->
+
+            <label id="length" for="length">Password Length Slider:</label>
             <input id="slider" type="range" min="8" max="128" step="1" oninput="sliderChange(this.value)">
-                <output id="output"></output>
+            <output id="output"></output>
           </div>
+
+          <!-- card footer with button to fire click event and generate a password based on criteria above -->
+
           <div class="card-footer">
-            <button id="generate"  type="submit" class="btn active">Generate Password</button>
-         </div>
+            <button id="generate" type="submit" class="btn active">Generate Password</button>
+          </div>
         </div>
       </div>
     </div>
@@ -71,11 +98,12 @@
 
   <footer class="footer" id="footer">
     <div class="container">
-        <span class="text-muted">&copy; Copyright 2020 Victor Litzau</span>
+      <span class="text-muted">&copy; Copyright 2020 Victor Litzau</span>
     </div>
+  </footer>
 
-</footer>
-<!-- javaScript and jQuery mins work with bootstrap cdns -->
+  <!-- javaScript and jQuery mins work with bootstrap cdns -->
+
   <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
