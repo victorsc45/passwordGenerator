@@ -14,7 +14,7 @@ Password Generator website using the power of javascript
 
    * Screenshot of the wireframe generator provided for reference in the `Assets` folder. Use Bootstrap to create a similar, responsive layout with css and html updated dynamically.
 # Screenshot of the mockup of password generator html and css provided 
-   <img src="./Assets/03-javascript-homework-demo.png" width="200px" >
+   <img src="./Assets/03-javascript-homework-demo.png" width="300px" >
   
   
 # Password Generator
@@ -23,7 +23,7 @@ Password Generator website using the power of javascript
   * Generate button triggers click event in javascript(if criteria is selected)
   * four main criteria user has a choice to pick(upper case letters, lower case letters, numbers, special characters)
   * Slider can be moved horizontally to choose the length of the secure password(if criteria is selected)
-  * Link to deployed site: https://victorsc45.github.io/Portfolio/
+  * Link to deployed site: https://victorsc45.github.io/passwordGenerator/
   
 ## Spec Criteria
 
@@ -36,7 +36,7 @@ Password Generator website using the power of javascript
 
 * The password is displayed on the screen in the text area
 
-### Minimum Requirementscon
+### Minimum Requirements
 
 * Functional, deployed application
 
