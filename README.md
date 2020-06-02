@@ -1,49 +1,101 @@
-# 03 JavaScript: Password Generator
+# Portfolio
+personal portfolio website
+# Description
 
-Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+   * Using Bootstrap, develop your portfolio site with the following items:
 
-If you are unfamiliar with special characters, take a look at [some examples](https://www.owasp.org/index.php/Password_special_characters).
+   * A navbar
 
-## User Story
+   * A responsive layout
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+   * Responsive images
 
-## Acceptance Criteria
+   * The Bootstrap portfolio should minimize the use of media queries.
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+   * Screenshots are provided as a reference in the `Assets/Images` folder. Your app does not need to be _exactly_ like the images. Use Bootstrap to create a similar, responsive layout.
+# Screen Shots of ultimate goal in responsive layout this Portfolio is stylized slightly differently
+   <img src="Assets/Images/HomeworkExamples/640-index.jpg" width="200px" >
+   <img src="Assets/Images/HomeworkExamples/640-portfolio.jpg" width="200px">
+   <img src="Assets/Images/HomeworkExamples/640-contact.jpg" width="200px">
+  
+# portfolio
 
-The following image demonstrates the application functionality:
+  * About me page with a little introduction of myself and a placeholder picture
+  * Portfolio page showing five placeholder pictures of projects
+  * Contact page used for contacting me with a name, email, message, and submit button.
+  * Link to deployed site: https://victorsc45.github.io/Portfolio/
+  
+## Spec Criteria
 
-![password generator demo](./Assets/03-javascript-homework-demo.png)
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-# references 
-https://www.florin-pop.com/blog/2019/09/100-days-100-projects/
 '''
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+* Use Bootstrap's grid system (containers, rows, and columns).
+
+* On an `xs` screen, content should take up the entire screen. On `sm` and larger screens, you should have some margins on the left and right sides of the screen. Check out various sites on your mobile device vs. your computer to see examples of these differences.
+
+* Use an HTML validation service to ensure that each page has valid HTML.
+
+### Minimum Requirementscon
+
+* Functional, deployed application
+
+* GitHub repository with README describing the project
+
+* Navbar must be consistent on each page.
+
+* Navbar on each page must contain links to Home/About, Contact, and Portfolio pages.
+
+* All links must work.
+
+* Must use semantic html.
+
+* Each page must have valid and correct HTML. (use a validation service)
+
+* Must contain your personalized information. (bio, name, images, links to social media, etc.)
+
+* Must properly utilize Bootstrap components and grid system.
+
+'''
+### Bonus
+
+* Using Bootstrap, make a sticky footer and use sub-rows and sub-columns on your portfolio site (**Hint:** Check out the Bootstrap documentation).
+
+# Instulation
+
+N/A at this time simple follow the url and the links in the page
+
+
+# Review
+
+Ensure accessibility and source code legibility. UX funtional and bootstrap responsiveness and update links to operational status.
+
+# Credits
+
+The following links were used as reference as research.
+
+https://developer.mozilla.org/en-US/docs/Web/HTML
+
+'''
+https://www.w3.org/standards/webdesign/accessibility
+
+'''
+''' bootstrap components link starting 'A' and descending '''
+
+https://getbootstrap.com/docs/4.5/components/alerts/
+
+'''
+# thanks to Unsplashed and dPhoto by Tanner Ross on Unsplash music
+# Photo by Courtnie Tosana on Unsplash fire and ice
+# Photo by Chris Liverani on Unsplash math picture 
+# Photo by Ibrahim Rifath on Unsplash grid on phone picture
+# Photo by Andrew Buchanan on Unsplash
+# background texture Concrete Wall Made by Atle Mo ''' https://www.transparenttextures.com/ '''
+
+
+# License
+ Open to the public website for Portfolio website
+
+# Tests
+
+test links on the site navigation and bootstrap responsive content
+
+
