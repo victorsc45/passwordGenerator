@@ -6,9 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Password Generator</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <!-- bootstrap stylesheet  -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    
+     <!-- sticky footer bootstrap for css stylesheet -->
+     <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/sticky-footer.css">
 </head>
 
 <body>
@@ -21,7 +29,7 @@
   </nav>
 
 
-  <div class=" container wrapper">
+  <div class="container-fluid wrapper">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 mx-auto">
         <header>
@@ -61,12 +69,22 @@
           </div>
           <div class="card-footer">
             <button id="generate"  type="submit" class="btn active">Generate Password</button>
-            <hr>
+          
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- sticky footer using absolute bootstrap -->
+
+  <footer class="footer" id="footer">
+    <div class="container">
+        <span class="text-muted">&copy; Copyright 2020 Victor Litzau</span>
+    </div>
+
+</footer>
+<!-- javaScript and jQuery mins work with bootstrap cdns -->
   <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
