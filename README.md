@@ -1,38 +1,40 @@
-# Portfolio
-personal portfolio website
+# Password Generator
+Password Generator website using the power of javascript
 # Description
 
-   * Using Bootstrap, develop your portfolio site with the following items:
+   * Using Bootstrap, develop a password generator site with the following items:
 
-   * A navbar
+   * Generator will create a random password based on user criteria(upper case letters, lower case letters, numbers, special characters, and length of password)
 
-   * A responsive layout
+   * A responsive layout for multiple screen sizes
 
-   * Responsive images
+   * Dynamically updated site powered by javascript
 
-   * The Bootstrap portfolio should minimize the use of media queries.
+   * Password must be between 8 and 128 characters long
 
-   * Screenshots are provided as a reference in the `Assets/Images` folder. Your app does not need to be _exactly_ like the images. Use Bootstrap to create a similar, responsive layout.
-# Screen Shots of ultimate goal in responsive layout this Portfolio is stylized slightly differently
-   <img src="Assets/Images/HomeworkExamples/640-index.jpg" width="200px" >
-   <img src="Assets/Images/HomeworkExamples/640-portfolio.jpg" width="200px">
-   <img src="Assets/Images/HomeworkExamples/640-contact.jpg" width="200px">
+   * Screenshot of the wireframe generator provided for reference in the `Assets` folder. Use Bootstrap to create a similar, responsive layout with css and html updated dynamically.
+# Screenshot of the mockup of password generator html and css provided 
+   <img src="./Assets/03-javascript-homework-demo.png" width="200px" >
   
-# portfolio
+  
+# Password Generator
 
-  * About me page with a little introduction of myself and a placeholder picture
-  * Portfolio page showing five placeholder pictures of projects
-  * Contact page used for contacting me with a name, email, message, and submit button.
+  * Home page ---
+  * Generate button triggers click event in javascript(if criteria is selected)
+  * four main criteria user has a choice to pick(upper case letters, lower case letters, numbers, special characters)
+  * Slider can be moved horizontally to choose the length of the secure password(if criteria is selected)
   * Link to deployed site: https://victorsc45.github.io/Portfolio/
   
 ## Spec Criteria
 
 '''
-* Use Bootstrap's grid system (containers, rows, and columns).
+* User needs a new secure random password(up to 128 characters)
 
-* On an `xs` screen, content should take up the entire screen. On `sm` and larger screens, you should have some margins on the left and right sides of the screen. Check out various sites on your mobile device vs. your computer to see examples of these differences.
+* User is given the choice of the criteria to include in the password(upper case letters, lower case letters, numbers, special characters), using input from checkboxes
 
-* Use an HTML validation service to ensure that each page has valid HTML.
+* User may choose length of secure password between 8 and 128 characters long and must choose criteria to generate a password
+
+* The password is displayed on the screen in the text area
 
 ### Minimum Requirementscon
 
@@ -42,31 +44,18 @@ personal portfolio website
 
 * Navbar must be consistent on each page.
 
-* Navbar on each page must contain links to Home/About, Contact, and Portfolio pages.
-
-* All links must work.
-
-* Must use semantic html.
-
-* Each page must have valid and correct HTML. (use a validation service)
-
-* Must contain your personalized information. (bio, name, images, links to social media, etc.)
-
 * Must properly utilize Bootstrap components and grid system.
-
-'''
-### Bonus
-
-* Using Bootstrap, make a sticky footer and use sub-rows and sub-columns on your portfolio site (**Hint:** Check out the Bootstrap documentation).
 
 # Instulation
 
-N/A at this time simple follow the url and the links in the page
+N/A at this time simple follow the url 
+Select the criteria and length of password
+Click Generate Password button
 
 
 # Review
 
-Ensure accessibility and source code legibility. UX funtional and bootstrap responsiveness and update links to operational status.
+Ensure javascript functions are pulling the correct charCode and special characters, and resulting data is in blocks or arrays and use math floor and math random methods to return characters for password.  Loop through using length of password criteria to produce a secure password. UX funtional and bootstrap responsiveness.
 
 # Credits
 
@@ -83,19 +72,15 @@ https://www.w3.org/standards/webdesign/accessibility
 https://getbootstrap.com/docs/4.5/components/alerts/
 
 '''
-# thanks to Unsplashed and dPhoto by Tanner Ross on Unsplash music
-# Photo by Courtnie Tosana on Unsplash fire and ice
-# Photo by Chris Liverani on Unsplash math picture 
-# Photo by Ibrahim Rifath on Unsplash grid on phone picture
-# Photo by Andrew Buchanan on Unsplash
-# background texture Concrete Wall Made by Atle Mo ''' https://www.transparenttextures.com/ '''
+https://www.florin-pop.com/blog/2019/09/100-days-100-projects/
 
+# thanks @alfredmaldonadoiii from trilobot Learning Assistant with my function: malfunction. :)
 
 # License
- Open to the public website for Portfolio website
+ Open to the public website for Password Generator website
 
 # Tests
 
-test links on the site navigation and bootstrap responsive content
+test: Try password generation on the site and bootstrap responsive content
 
 
