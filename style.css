@@ -1,9 +1,12 @@
+/* This file was provided out of the box for this project */
+
+/* border box-sizing to prevent movement of boxes padding issues */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
+/* zero out the body of the entire page */
 html,
 body,
 .wrapper {
@@ -11,12 +14,12 @@ body,
   margin: 0;
   padding: 0;
 }
-
+/* add background color and font */
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
-
+/* custom footer properties */
 #footer {
   position: fixed;
   bottom: 0;
@@ -26,6 +29,7 @@ body {
   text-align: center;
   margin-top: auto;
 }
+/* initialize generate password button */
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
@@ -65,7 +69,7 @@ hr {
 .custom-navbar {
   background-image: linear-gradient(#fff, #4aaaa4);
 }  
-
+/* container properties */
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
@@ -78,7 +82,7 @@ header {
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
 }
-
+/* card bootstrap object properties */
 #card {
   background-color: #4aaaa4;
   opacity: .7;
@@ -107,7 +111,7 @@ header {
 .room {
   margin: 0 20px;
 }
-
+/* Slider for user's choice of pass length properties */
 #length {
   float: left;
   margin: 0 10px 0 0;
@@ -117,13 +121,14 @@ header {
   float: left;
   width: 60%;
 }
+/* styling for js html text changes */
 #output {
   margin: 0 20px;
 }
 .card-footer {
   text-align: center;
 }
-
+/* before and after card footer styling */
 .card-footer::before {
   content: " ";
   display: block;
@@ -137,7 +142,7 @@ header {
   display: block;
   clear: both;
 }
-
+/* styling for generate password button */
 #generate {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -157,7 +162,7 @@ header {
 .float-right {
   float: right;
 }
-
+/* generated content in text area */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -180,7 +185,7 @@ header {
   resize: auto;
   overflow: hidden;
 }
-
+/* media query section */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;

@@ -65,7 +65,7 @@ function generatePassword(lower, upper, num, spChar, lenChoice) {
 
   for (let i = 0; i < lenChoice; i += checkedCount) {
 
-    // for each loop checkbox object block and append passwordText
+    // foreach loop checkbox object block and append passwordText
 
     charsArr.forEach(checkBx => {
 

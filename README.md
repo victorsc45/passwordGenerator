@@ -38,6 +38,8 @@ Password Generator website using the power of javascript
 
 ### Minimum Requirements
 
+* Password generated based on user choosen criteria(Upper and Lower case letters, Numbers, Special Characters, and Length of password)
+
 * Functional, deployed application
 
 * GitHub repository with README describing the project
